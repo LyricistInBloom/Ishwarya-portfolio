@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishwarya – The Lyricist in Bloom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+  </head>
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white font-sans">
+    <header class="fixed top-0 w-full flex justify-between items-center px-10 py-4 bg-white dark:bg-gray-900 shadow-md z-50">
+      <h1 class="text-xl font-serif">Ishwarya</h1>
+      <button id="toggleTheme" class="text-sm px-4 py-2 border rounded hover:bg-gray-200 dark:hover:bg-gray-700">
+        Toggle Theme
+      </button>
+    </header>
+
+    <main class="pt-24 space-y-24">
+      <!-- Home -->
+      <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h2 class="text-4xl md:text-6xl font-serif mb-4">The Lyricist in Bloom</h2>
+        <p class="italic text-lg md:text-xl">"Writing from the soul, blooming through every verse."</p>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-serif mb-4 border-b pb-2">About Me</h3>
+        <p class="text-lg leading-relaxed">
+          I'm Ishwarya, a lyricist and vocalist who’s been singing since the age of 4 and writing since I turned 18.
+          Through music and words, I express feelings I often can't say out loud — the gentle, aching, blooming kind.
+        </p>
+      </section>
+
+      <!-- Lyrics -->
+      <section id="lyrics" class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-serif mb-4 border-b pb-2">✨ Featured Lyrics</h3>
+        <div class="space-y-6">
+          <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl shadow">
+            <h4 class="font-bold">Scars Still Attached</h4>
+            <p class="text-sm whitespace-pre-line">
+I'm trying to find those broken promises
+That once held our lanes eternally
+The car’s just parked — the engine gave out
+I wanted to drive to the home we talked about
+My face on the window, I see you in the rain
+Still attached with scars… you can’t even recall
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Poems -->
+      <section id="poems" class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-serif mb-4 border-b pb-2">🌿 Poetry Garden</h3>
+        <div class="space-y-6">
+          <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl shadow">
+            <p class="italic">
+              Her freckles like fallen stars,<br />
+              A bloom untouched by fame —<br />
+              I walk behind her shadow,<br />
+              Never daring to whisper her name.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-serif mb-4 border-b pb-2">Skills</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Lyric Writing</li>
+          <li>Vocal Performance</li>
+          <li>Poetry Composition</li>
+          <li>Storytelling & Emotional Expression</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="max-w-4xl mx-auto px-4 pb-24">
+        <h3 class="text-3xl font-serif mb-4 border-b pb-2">Contact</h3>
+        <p class="mb-4">Feel free to reach out to me at:</p>
+        <a href="mailto:your.email@example.com" class="text-blue-500 underline">your.email@example.com</a>
+        <p class="mt-4">or find me on Instagram: <a href="#" class="text-blue-500 underline">@thelyricistinbloom</a></p>
+      </section>
+    </main>
+
+    <script>
+      const toggleBtn = document.getElementById('toggleTheme');
+      toggleBtn.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>
